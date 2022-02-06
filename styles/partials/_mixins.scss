@@ -1,0 +1,8 @@
+/* 
+This file contains all reusabla mixins/functions you can create and add according to your needs.
+*/
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}

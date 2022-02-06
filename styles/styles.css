@@ -1,0 +1,46 @@
+/* 
+ Add variables related to colors/color pallete of your application here and
+ access them from every scss file within the app 
+*/
+/*
+ You can add all variables regarding your font settings for the app.
+*/
+/* 
+ Add all variables that you need in your app in  this file and have them unified.
+ 
+ You can add everything related to your inputs, borders, heights, widths of specific elements, 
+ the possibilities are unlimited :) 
+*/
+/* 
+This file contains all reusabla mixins/functions you can create and add according to your needs.
+*/
+/* 
+ You can extend this list of breakpoints and add additional mixins for 
+ 'forScreenSizesMax' or for screenSizes to have exact screen size matching 
+*/
+.some-box {
+  color: blue;
+  font-size: 24px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: purple;
+}
+
+@media only screen and (min-width: 320px) {
+  .some-box {
+    background-color: #a07008;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .some-box {
+    background-color: #f75151;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .some-box {
+    background-color: #46d846;
+  }
+}

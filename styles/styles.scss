@@ -1,0 +1,22 @@
+@import './partials/colors';
+@import './partials/fonts';
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/media-queries';
+
+.some-box {
+  color: $text-primary-color;
+  font-size: $p-font-size;
+  @include widthHeight(300px, 300px);
+  border-radius: $default-border-radius;
+  background: $default-box-bg;
+  @include forScreenSizesMin(phone) {
+    background-color: $orange-bg;
+  }
+  @include forScreenSizesMin(tablet) {
+    background-color: $red-bg;
+  }
+  @include forScreenSizesMin(desktop) {
+    background-color: $green-bg;
+  }
+}
